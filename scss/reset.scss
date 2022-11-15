@@ -4,10 +4,10 @@
     Inspired by meyerweb reset | https://meyerweb.com/eric/tools/css/reset/
 */
 
+@import "all-elements";
+
 // ajustes no meyerweb reset
-*,
-*::after,
-*::before {
+@include all-elements {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
