@@ -1,7 +1,11 @@
-/* 
-    CSS Reset by @Leo-Henrique | https://github.com/Leo-Henrique/css-reset
+/*
+    leo-reset.css
 
-    Inspired by meyerweb reset | https://meyerweb.com/eric/tools/css/reset/
+    * author: Leonardo Henrique
+    * email: leonardo0507.business@gmail.com
+    * repo: https://github.com/Leo-Henrique/leo-reset.css
+    * MIT License
+    * inspired in: meyerweb reset
 */
 *, *::after, *::before, a, abbr, address,
 article, aside, audio, b, bdi, bdo,
