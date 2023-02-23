@@ -1,0 +1,45 @@
+$fontSizeRoot: 62.5%; // 1rem = 10px
+// personalizando e setando padrões
+:root {
+    // base 10px
+    font-size: $fontSizeRoot;
+    scroll-behavior: smooth;
+    // remove o atraso de clique no smartphone windows
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+body {
+	// remove a caixa azul ao clicar em botões pelos dispositivos móveis
+    // propriedade fora dos padrões, seu uso pode ser incerto e inconstante entre navegadores!
+	-webkit-tap-highlight-color: transparent;
+}
+a, button, input, 
+select, textarea {
+    // remove o estilo de borda padrão no dispositivo móvel
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+a, abbr[title] {
+    text-decoration: none;
+}
+abbr[title] {
+    cursor: help;
+    // as linhas de sublinhados e textos tachados não são interrompidas pela tipografia / texto
+    -webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+}
+button {
+    background: none;
+    text-align: left;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
