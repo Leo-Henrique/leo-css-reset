@@ -5,6 +5,9 @@
     "files": ["./dist"],
     "style": "./dist/leo-reset.css",
     "license": "MIT",
+    "scripts": {
+        "update": "git push && npm publish"
+    },
     "keywords": [
         "modern-css-reset",
         "css-reset",
