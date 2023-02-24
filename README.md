@@ -79,9 +79,9 @@ layer(leo-reset.css);
 
 ## 💻 Features
 
-You can mainly refer to the following file to see the main features with proper explanation of `leo-reset.css`: 
+You can mainly refer to the following file to see the main features with proper explanation of leo-reset.css: 
 
-*scss/lib/_patterns.scss*
+`scss/lib/_patterns.scss`
 
 ## 🔗 Useful links
 
