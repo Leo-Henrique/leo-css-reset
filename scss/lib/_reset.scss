@@ -29,3 +29,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a, abbr[title] {
+    text-decoration: none;
+}
+button {
+    background: none;
+    text-align: left;
+}
