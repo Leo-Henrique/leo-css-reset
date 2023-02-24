@@ -1,21 +1,21 @@
 $fontSizeRoot: 62.5%; // 1rem = 10px
-// personalizando e setando padrões
+
 :root {
-    // base 10px
     font-size: $fontSizeRoot;
     scroll-behavior: smooth;
-    // remove o atraso de clique no smartphone windows
+    // remove touch delay in some smartphones
+    // disabled double tap for zoom in mobile
     -ms-touch-action: manipulation;
     touch-action: manipulation;
 }
 body {
-	// remove a caixa azul ao clicar em botões pelos dispositivos móveis
-    // propriedade fora dos padrões, seu uso pode ser incerto e inconstante entre navegadores!
+	// remove highlight color when tapped on a link on mobile
+    // warning: non-default property, see readme!
 	-webkit-tap-highlight-color: transparent;
 }
-a, button, input, 
-select, textarea {
-    // remove o estilo de borda padrão no dispositivo móvel
+a, button, datalist, 
+input, select, textarea {
+    // remove native appearance for UI controls
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -25,7 +25,7 @@ a, abbr[title] {
 }
 abbr[title] {
     cursor: help;
-    // as linhas de sublinhados e textos tachados não são interrompidas pela tipografia / texto
+    // lines of underline and strikethrough text are not interrupted by letters in a text
     -webkit-text-decoration-skip-ink: none;
 	text-decoration-skip-ink: none;
 }
@@ -39,6 +39,7 @@ em {
 strong {
     font-weight: bold;
 }
+// responsive media
 img, video {
     max-width: 100%;
     height: auto;
