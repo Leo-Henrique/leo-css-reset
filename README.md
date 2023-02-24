@@ -37,9 +37,45 @@ This CSS Reset was inspired by **meyerweb reset**, created by [Eric A. Meyer](ht
 
 This repository is distributed with the [npm package manager](https://www.npmjs.com/). Perform the [Installation of Node.js](https://nodejs.org/pt-br/) which already has npm as default package manager.
 
+If you prefer not to use NPM, use the package via CDN as shown below.
+
+### Installation
+
 ```bash
 npm i leo-reset.css
 ```
+
+### Use
+
+You may prefer to use leo-reset.css through HTML or through CSS. In all cases, always include leo-reset.css before other stylesheets.
+
+#### Use with HTML
+
+Through NPM:
+```html
+<link rel="stylesheet" href="/node_modules/leo-reset.css/dist/leo-reset.css" />
+```
+
+Through CDN:
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leo-reset.css/dist/leo-reset.css" />
+```
+
+#### Use with CSS
+
+Through NPM:
+```css
+@import "/node_modules/leo-reset.css/dist/leo-reset.css"
+layer(leo-reset.css);
+```
+
+Through CDN:
+```css
+@import url("https://cdn.jsdelivr.net/npm/leo-reset.css/dist/leo-reset.css")
+layer(leo-reset.css);
+```
+
+[layer()](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer) is just to create a new cascade layer to identify the styles applied by leo-reset.css. **You must [delete it in production](https://caniuse.com/?search=%40import%20layer)**.
 
 ## 💻 Features
 
