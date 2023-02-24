@@ -1,7 +1,7 @@
 {
     "name": "leo-reset.css",
-    "version": "1.0.0",
-    "description": "The idea of this CSS reset is to reset any pre-set styles on elements by browsers, but keep styles that are hard to leave out in a web app.",
+    "version": "1.0.1",
+    "description": "CSS reset with the goal of resetting the default styles set by browsers, but maintaining some and totally beneficial styling standards.",
     "style": "./dist/leo-reset.css",
     "license": "MIT",
     "keywords": [
