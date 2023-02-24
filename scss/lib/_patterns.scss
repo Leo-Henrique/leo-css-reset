@@ -1,0 +1,40 @@
+$fontSizeRoot: 62.5%; // 1rem = 10px
+
+:root {
+    font-size: $fontSizeRoot;
+    scroll-behavior: smooth;
+    // remove touch delay in some smartphones
+    // disabled double tap for zoom in mobile
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+body {
+	// remove highlight color when tapped on a link on mobile
+    // warning: non-default property, see readme!
+	-webkit-tap-highlight-color: transparent;
+}
+a, button, datalist, 
+input, select, textarea {
+    // remove native appearance for UI controls
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+// breakpoint used by Bootstrap
+@media (max-width: 575.98px) {
+    // remove zoom when field is focused on safari for mobile
+    datalist, input, select, textarea {
+        font-size: 16px;
+    }
+}
+abbr[title] {
+    cursor: help;
+    // lines of underline and strikethrough text are not interrupted by letters in a text
+    -webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+}
+// responsive media
+img, video {
+    max-width: 100%;
+    height: auto;
+}
